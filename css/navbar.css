@@ -1,0 +1,90 @@
+
+nav {
+    height: 70px;
+    background: #ffb6d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+    font-size: clamp(18px, 2.5vw, 28px); 
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(14px, 1.4vw, 18px);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.active a {
+    border-bottom: 5px solid #ce4486;
+}
+
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    nav .logo {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+
+    nav ul li a {
+        font-size: clamp(13px, 2vw, 16px);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .logo {
+        font-size: clamp(14px, 4vw, 22px);
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: clamp(12px, 4vw, 16px);
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 15px;
+    }
+
+    nav .logo {
+        font-size: clamp(12px, 5vw, 20px);
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: clamp(11px, 5vw, 14px);
+        gap: 4px;
+    }
+}
